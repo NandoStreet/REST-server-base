@@ -41,8 +41,9 @@ const usuariosPut = async(req, res = response) => {
     }
 
     const usuario = await Usuario.findByIdAndUpdate(id, resto, {new: true});
+    
 
-    res.json(usuario);
+    res.json(usuario, usuarioAutenticado);
 }
 //  POST
 const usuariosPost = async(req, res = response) => {
@@ -76,7 +77,7 @@ const usuariosDelete = async(req, res = response) => {
 
     const usuario = await Usuario.findByIdAndUpdate(id, { estado: false });
 
-    res.json(usuario);
+    res.json({usuario});
 }
 
 export { usuariosGet, 
