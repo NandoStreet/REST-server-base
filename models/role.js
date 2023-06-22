@@ -7,5 +7,5 @@ const RoleSchema = Schema({
     }
 });
 
-export const Role = model('Role', RoleSchema);
- 
+const Role = model('Role', RoleSchema);
+export default Role; 
