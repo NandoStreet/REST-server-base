@@ -85,5 +85,8 @@ const crearProducto = async(req, res =  response) => {
     res.status(201).json(producto);
 }
 
-
-export { obtenerProductos, obtenerProducto, actualizarProducto, borrarProducto, crearProducto }
+export { obtenerProductos, 
+    obtenerProducto, 
+    actualizarProducto, 
+    borrarProducto, 
+    crearProducto }
